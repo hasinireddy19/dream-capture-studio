@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal & Blog | Dream Capture Studio</title>
+    <meta name="description" content="Read the Dream Capture Studio journal for wedding planning tips, portrait styling ideas, newborn session guidance, and recent photography stories.">
+    <meta name="keywords" content="photography blog, wedding planning tips, portrait guide, newborn session advice, dream capture studio blog">
+    <meta property="og:title" content="Journal & Blog | Dream Capture Studio">
+    <meta property="og:description" content="Photography tips, styling guides, and beautiful behind-the-scenes stories from our studio.">
+    <meta property="og:image" content="images/baby.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        .blog-card {
+            transition: var(--transition);
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+        .blog-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-md);
+        }
+        .blog-category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .blog-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .blog-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dream Capture Studio</a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-header fade-in">
+        <div class="container">
+            <h1>The Journal</h1>
+            <p>Recent sessions, photography tips, and behind-the-scenes stories.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Blog Search and Filters -->
+            <div class="blog-filters-container fade-in">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="blog-search" class="form-control blog-search-control" placeholder="Search journal stories or tips...">
+                </div>
+                <ul class="blog-cats">
+                    <li><button class="blog-cat-btn active" data-cat="all">All Stories</button></li>
+                    <li><button class="blog-cat-btn" data-cat="wedding">Real Weddings</button></li>
+                    <li><button class="blog-cat-btn" data-cat="birthday">Birthdays</button></li>
+                    <li><button class="blog-cat-btn" data-cat="baby">Baby & Newborn</button></li>
+                    <li><button class="blog-cat-btn" data-cat="fashion">Fashion</button></li>
+                </ul>
+            </div>
+            
+            <div class="blog-grid fade-in">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <img src="images/wedding-ceremony.jpeg" alt="Wedding Ceremony" class="blog-image">
+                    <span class="blog-category">Real Weddings</span>
+                    <h2 class="blog-title"><a href="#">A Dreamy Floral Wedding Ceremony</a></h2>
+                    <p class="blog-excerpt">An enchanting celebration under cascading white flowers, with the bride in a stunning pink lehenga and the groom in elegant sherwani...</p>
+                    <a href="#" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Read Story &rarr;</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <img src="images/baby.jpeg" alt="Newborn Session" class="blog-image">
+                    <span class="blog-category">Baby & Newborn</span>
+                    <h2 class="blog-title"><a href="#">Precious Moments: A Newborn Photography Session</a></h2>
+                    <p class="blog-excerpt">Capturing the tiniest details of a newborn — from delicate fingers to peaceful sleeping poses wrapped in soft pink...</p>
+                    <a href="#" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Read Story &rarr;</a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <img src="images/birthday-celebration.jpeg" alt="Birthday Celebration" class="blog-image">
+                    <span class="blog-category">Birthdays</span>
+                    <h2 class="blog-title"><a href="#">A Magical First Birthday Celebration</a></h2>
+                    <p class="blog-excerpt">Balloons, rainbows, and the biggest smile — this little one's first birthday was a dream come true to photograph...</p>
+                    <a href="#" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Read Story &rarr;</a>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card">
+                    <img src="images/fashion-outdoor.png" alt="Fashion Editorial" class="blog-image">
+                    <span class="blog-category">Fashion</span>
+                    <h2 class="blog-title"><a href="#">Summer Lookbook: Editorial Outdoor Shoot</a></h2>
+                    <p class="blog-excerpt">Exploring neutral tones and soft lighting for our recent summer fashion lookbook session in the scenic countryside...</p>
+                    <a href="#" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Read Story &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 5px;">Dream Capture Studio</h3>
+                    <p style="margin-bottom: 0;">Capturing timeless memories.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Dream Capture Studio. All rights reserved. Designed with love by the Dream Capture Studio Team.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

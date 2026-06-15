@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dream Capture Studio</title>
+    <meta name="description" content="Explore the professional photography portfolio of Dream Capture Studio. Featuring authentic and luminous wedding photography, birthday celebrations, and fashion portfolios.">
+    <meta name="keywords" content="photography portfolio, wedding photography gallery, baby photoshoot portfolio, fashion editorial showcase">
+    <meta property="og:title" content="Portfolio | Dream Capture Studio">
+    <meta property="og:description" content="View our curated collection of love, life, and celebrations. Bright and airy photography gallery.">
+    <meta property="og:image" content="images/wedding.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+        .filter-nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+        .filter-nav button {
+            background: none;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+        .filter-nav button:hover, .filter-nav button.active {
+            color: var(--text-primary);
+            border-bottom-color: var(--accent-color);
+        }
+        /* Masonry Layout Adjustments */
+        .gallery-grid {
+            column-count: 3;
+            column-gap: var(--spacing-md);
+            display: block;
+        }
+        .gallery-item {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            width: 100%;
+            aspect-ratio: auto; /* Let image dictate height */
+        }
+        @media (max-width: 768px) {
+            .gallery-grid { column-count: 2; }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid { column-count: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dream Capture Studio</a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-header fade-in">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>A curated collection of love, life, and celebration.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Filter Nav (With working categories) -->
+            <ul class="filter-nav fade-in">
+                <li><button class="filter-btn active" data-filter="all">All Work</button></li>
+                <li><button class="filter-btn" data-filter="wedding">Weddings</button></li>
+                <li><button class="filter-btn" data-filter="birthday">Birthdays</button></li>
+                <li><button class="filter-btn" data-filter="fashion">Fashion</button></li>
+            </ul>
+
+            <div class="gallery-grid fade-in">
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/wedding.jpeg" alt="Wedding Moment - Couple Holding Hands">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="images/fashion-walk.jpeg" alt="Fashion Walk - Colorful Long Dress">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/baby.jpeg" alt="Newborn Photography">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/wedding-ceremony.jpeg" alt="Wedding Ceremony - Jaimala">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="images/fashion-camera.jpeg" alt="Fashion Photoshoot - Red Outfit">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="images/fashion-portrait.jpeg" alt="Fashion Portrait - Red Glasses">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/outdoor-shoot.jpeg" alt="Outdoor Baby Photoshoot">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="fashion">
+                    <img src="images/fashion-outdoor.png" alt="Fashion Editorial - White Outfit">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/baby2.jpeg" alt="Baby Milestone - Six Months">
+                    <div class="gallery-overlay"><span style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-primary);">View Image</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 5px;">Dream Capture Studio</h3>
+                    <p style="margin-bottom: 0;">Capturing memories.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Dream Capture Studio. All rights reserved. Designed with love by the Dream Capture Studio Team.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&larr;</button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" src="" alt="">
+        </div>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">&rarr;</button>
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Capture Studio | Bright & Airy Photography</title>
+    <meta name="description" content="Dream Capture Studio specializes in elegant, bright, and airy photography for weddings, birthdays, and fashion portfolios. Capture your timeless moments.">
+    <meta name="keywords" content="photography studio, wedding photographer, birthday photoshoot, fashion portfolio, bright and airy photography">
+    <meta property="og:title" content="Dream Capture Studio | Bright & Airy Photography">
+    <meta property="og:description" content="Capture your life's most beautiful memories with a light, warm, and timeless aesthetic. Specialize in Weddings, Events, and Fashion.">
+    <meta property="og:image" content="images/wedding.jpeg">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Entry Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="namaste-container">
+            <div class="namaste-half left-half"></div>
+            <div class="namaste-half right-half"></div>
+        </div>
+        <div class="namaskaram-text" style="color: #D32F2F;">Namaste</div>
+    </div>
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dream Capture Studio</a>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <!-- Interactive 35mm Film Strip -->
+        <div class="film-strip-container fade-in">
+            <div class="film-strip">
+                <!-- Original 5 Frames -->
+                <div class="film-frame active" data-bg="images/bridal_portrait.png">
+                    <img src="images/bridal_portrait.png" alt="Bridal Portrait">
+                </div>
+                <div class="film-frame" data-bg="images/romantic_sunset.png">
+                    <img src="images/romantic_sunset.png" alt="Romantic Sunset">
+                </div>
+                <div class="film-frame" data-bg="images/wedding.jpeg" style="filter: grayscale(1);">
+                    <img src="images/wedding.jpeg" alt="Black and White">
+                </div>
+                <div class="film-frame" data-bg="images/fashion_editorial.png">
+                    <img src="images/fashion_editorial.png" alt="Fashion Editorial">
+                </div>
+                <div class="film-frame" data-bg="images/birthday_celebration.png">
+                    <img src="images/birthday_celebration.png" alt="Birthday Celebration">
+                </div>
+                
+                <!-- Duplicated 5 Frames for Seamless Infinite Scroll -->
+                <div class="film-frame" data-bg="images/bridal_portrait.png">
+                    <img src="images/bridal_portrait.png" alt="Bridal Portrait">
+                </div>
+                <div class="film-frame" data-bg="images/romantic_sunset.png">
+                    <img src="images/romantic_sunset.png" alt="Romantic Sunset">
+                </div>
+                <div class="film-frame" data-bg="images/wedding.jpeg" style="filter: grayscale(1);">
+                    <img src="images/wedding.jpeg" alt="Black and White">
+                </div>
+                <div class="film-frame" data-bg="images/fashion_editorial.png">
+                    <img src="images/fashion_editorial.png" alt="Fashion Editorial">
+                </div>
+                <div class="film-frame" data-bg="images/birthday_celebration.png">
+                    <img src="images/birthday_celebration.png" alt="Birthday Celebration">
+                </div>
+            </div>
+        </div>
+
+        <div class="container hero-content fade-in">
+            <h1>
+                <span class="bg-black">Capturing</span>
+                <span class="bg-white">Life's Most</span><br>
+                <span class="bg-black">Beautiful</span>
+                <span class="bg-white">Moments.</span>
+            </h1>
+            <p style="margin-top: 1rem; line-height: 1.8; color: var(--text-secondary); font-size: 1.2rem; max-width: 500px;">
+                Specializing in Weddings, Birthdays, and Fashion with a bright, airy, and timeless aesthetic.
+            </p>
+            <div style="margin-top: var(--spacing-lg);">
+                <a href="portfolio.html" class="btn">View Portfolio</a>
+                <a href="contact.html" class="btn btn-outline" style="margin-left: 10px;">Book a Session</a>
+            </div>
+        </div>
+        <img src="images/bridal_portrait.png" alt="Stunning Bridal Portrait" class="hero-image">
+    </section>
+
+    <!-- Featured Services Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Expertise</h2>
+                <p>We create luminous, emotional, and authentic imagery to celebrate your unique story.</p>
+            </div>
+            
+            <div class="grid-4 fade-in">
+                <div class="card">
+                    <div class="card-icon">💍</div>
+                    <h3>Weddings</h3>
+                    <p>From intimate elopements to grand celebrations, we capture the magic of your special day with elegant detail.</p>
+                    <a href="services.html" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase;">Learn More &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎥</div>
+                    <h3>Pre-Wedding Shoots</h3>
+                    <p>Themed and storytelling-driven cinematic pre-wedding films capturing your authentic love journey.</p>
+                    <a href="services.html" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase;">Learn More &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎂</div>
+                    <h3>Birthdays</h3>
+                    <p>Milestone birthdays deserve to be remembered. Fun, vibrant, and candid portraits for you or your loved ones.</p>
+                    <a href="services.html" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase;">Learn More &rarr;</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👗</div>
+                    <h3>Fashion</h3>
+                    <p>Express your unique style and vision with professional editorial, lookbook, and high-fashion portfolio shoots.</p>
+                    <a href="services.html" style="font-weight: 500; font-size: 0.9rem; text-transform: uppercase;">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Showcase Image Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container fade-in">
+            <img src="images/team.jpg" alt="Featured Team Showcase" style="width: 100%; height: 550px; object-fit: cover; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real stories of light, laughter, and beautiful memories from the people we capture.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Dream Capture Studio made our wedding day look like a fairy tale. The bright and airy style perfectly captured the pure joy and details of our celebrations. Every photo feels like a work of art."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Chandrakala</h4>
+                            <span>Wedding Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"For my daughter's first birthday, we wanted someone who could capture the raw smiles and colorful chaos. The photos turned out so vibrant and beautiful. The team was incredibly patient with the kids!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Charlie</h4>
+                            <span>Birthday Session</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a designer, I need editorial photos that speak style. The fashion photoshoot with Dream Capture Studio was seamless. Their creative direction, eye for light, and editing are top tier."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <h4>Praveen</h4>
+                            <span>Fashion Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 5px;">Dream Capture Studio</h3>
+                    <p style="margin-bottom: 0;">Capturing memories.</p>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Dream Capture Studio. All rights reserved. Designed with love by the Dream Capture Studio Team.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
