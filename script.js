@@ -236,21 +236,21 @@ document.addEventListener('DOMContentLoaded', () => {
             birthday: 15000,   // Base package includes 1 hour
             wedding: 50000,    // Base package includes 8 hours (matching services.html package details)
             fashion: 25000,    // Base package includes 2 hours
-            prewedding: 40000  // Base package includes 4 hours
+            babyshower: 40000  // Base package includes 4 hours
         };
 
         const baseHours = {
             birthday: 1,
             wedding: 8,
             fashion: 2,
-            prewedding: 4
+            babyshower: 4
         };
 
         const hourlyRates = {
             birthday: 8000,
             wedding: 12000,
             fashion: 10000,
-            prewedding: 15000
+            babyshower: 15000
         };
 
         function calculatePrice() {
